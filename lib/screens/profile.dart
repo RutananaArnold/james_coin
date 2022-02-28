@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class AboutUs extends StatefulWidget {
-  const AboutUs({Key? key}) : super(key: key);
+class Profile extends StatefulWidget {
+  const Profile({Key? key}) : super(key: key);
 
   @override
-  _AboutUsState createState() => _AboutUsState();
+  _ProfileState createState() => _ProfileState();
 }
 
-class _AboutUsState extends State<AboutUs> {
+class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,7 +36,7 @@ class _AboutUsState extends State<AboutUs> {
                 ),
                 Padding(
                     padding: const EdgeInsets.all(20.0),
-                    child: Text("About us")),
+                    child: Text("Profile")),
                 Padding(
                   padding: const EdgeInsets.all(18.0),
                 )

@@ -1,8 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:james_coin/models/drawer_controller.dart';
+import 'package:james_coin/screens/dasboard.dart';
+import 'package:james_coin/screens/index.dart';
 import 'package:james_coin/screens/login.dart';
+import 'package:james_coin/screens/register.dart';
+// import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MyApp());
+  // MultiProvider(
+  //   providers: [
+  //     ChangeNotifierProvider(
+  //       create: (context) => MenuController(),
+  //     ),
+  //   ],
+  // );
 }
 
 class MyApp extends StatelessWidget {
@@ -27,10 +39,10 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/loginscreen',
       routes: {
-        // When navigating to the "/" route, build the FirstScreen widget.
         '/loginscreen': (context) => const Login(),
-        // When navigating to the "/second" route, build the SecondScreen widget.
-        // '/second': (context) => const SecondScreen(),
+        '/registerscreen': (context) => const Register(),
+        '/dashboard': (context) => const Dashboard(),
+        '/index': (context) => const Index(),
       },
     );
   }
